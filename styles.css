@@ -1,0 +1,102 @@
+/* ==========================================
+   ESTILOS PERSONALIZADOS - TALLER 1 DASHBOARD
+   ========================================== */
+
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #3f37c9;
+  --bg-color: #f8f9fa;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--bg-color);
+}
+
+/* Tarjetas KPI con animación flotante */
+.info-box {
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Tarjetas principales (Cards) con bordes suaves */
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}
+
+/* Tablas personalizadas y limpias */
+.table th {
+  font-weight: 600;
+  color: #495057;
+  background-color: #f1f3f5 !important;
+  border-top: none;
+}
+
+.table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(67, 97, 238, 0.04);
+}
+
+/* Botones y formularios estilizados */
+.form-control, .form-select {
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.15);
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-1px);
+}
+
+/* Sidebar personalizado */
+.app-sidebar {
+  background: linear-gradient(180deg, #212529 0%, #1a1d20 100%) !important;
+}
+
+.sidebar-brand {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
